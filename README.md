@@ -17,6 +17,7 @@ Everything's in `MultiPageTIFFViewerQt.py`. Just put it somewhere where your pro
 
 * [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) (version 4 or 5)
 * [TiffCapture](https://github.com/cdw/TiffCapture)
+* [qimage2ndarray](https://github.com/hmeine/qimage2ndarray)
 * [ImageViewerQt](https://github.com/marcel-goldschen-ohm/ImageViewerQt)
 
 On Mac OS X you can install Qt4 and PyQt4 via [Homebrew](http://brew.sh) as shown below:
@@ -24,9 +25,10 @@ On Mac OS X you can install Qt4 and PyQt4 via [Homebrew](http://brew.sh) as show
     brew install qt
     brew install pyqt
 
-[TiffCapture](https://github.com/cdw/TiffCapture) can be installed via pip:
+[TiffCapture](https://github.com/cdw/TiffCapture) and [qimage2ndarray](https://github.com/hmeine/qimage2ndarray) can be installed via pip:
 
     pip install tiffcapture
+    pip install qimage2ndarray
 
 ## A Simple Example
 
