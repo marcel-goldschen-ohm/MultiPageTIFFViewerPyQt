@@ -1,6 +1,6 @@
-# MultiPageTIFFViewerQt
+# MultiPageTIFFViewerPyQt
 
-A [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) (version 4 or 5) multi-page TIFF image stack viewer widget with mouse zoom and pan. The TIFF stack is loaded using [TiffCapture](https://github.com/cdw/TiffCapture), and the current stack frame is displayed using [ImageViewerQt](https://github.com/marcel-goldschen-ohm/ImageViewerQt) after converting the frame data format from a [NumPy](http://www.numpy.org) *ndarray* to *QImage* using [qimage2ndarray](https://github.com/hmeine/qimage2ndarray). Mouse interaction including zooming, panning and clicking is as described for [ImageViewerQt](https://github.com/marcel-goldschen-ohm/ImageViewerQt). A slider with arrow buttons allows traversal over the stack frames.
+A [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) (version 4 or 5) multi-page TIFF image stack viewer widget with mouse zoom and pan. The TIFF stack is loaded using [TiffCapture](https://github.com/cdw/TiffCapture), and the current stack frame is displayed using [ImageViewerPyQt](https://github.com/marcel-goldschen-ohm/ImageViewerPyQt) after converting the frame data format from a [NumPy](http://www.numpy.org) *ndarray* to *QImage* using [qimage2ndarray](https://github.com/hmeine/qimage2ndarray). Mouse interaction including zooming, panning and clicking is as described for [ImageViewerPyQt](https://github.com/marcel-goldschen-ohm/ImageViewerPyQt). A slider with arrow buttons allows traversal over the stack frames.
 
 [TiffCapture](https://github.com/cdw/TiffCapture) only reads a single frame into memory at a time (the displayed frame), thus providing very fast load times even for large image stacks by eliminating the need to load the entire stack into memory first. In case you do need the entire stack in memory (e.g. for perfomring operations such as z projections), the getAllFrames() method reads the entire stack into memory as a [NumPy](http://www.numpy.org) *ndarray*. *!!! This currently ONLY works for grayscale image stacks that can be represented as 3D arrays.*
 
@@ -18,7 +18,7 @@ Everything's in `MultiPageTIFFViewerQt.py`. Just put it somewhere where your pro
 * [PyQt](https://www.riverbankcomputing.com/software/pyqt/intro) (version 4 or 5)
 * [TiffCapture](https://github.com/cdw/TiffCapture)
 * [qimage2ndarray](https://github.com/hmeine/qimage2ndarray)
-* [ImageViewerQt](https://github.com/marcel-goldschen-ohm/ImageViewerQt)
+* [ImageViewerPyQt](https://github.com/marcel-goldschen-ohm/ImageViewerPyQt)
 
 On Mac OS X you can install Qt4 and PyQt4 via [Homebrew](http://brew.sh) as shown below:
 
